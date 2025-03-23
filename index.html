@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letrinhas e Números do Arthur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Letrinhas do Arthur</h1>
+    <p>Arraste a letra para a imagem correta!</p>
+
+    <div class="container">
+        <div class="letters" id="letters"></div>
+        <div class="drop-areas" id="drop-areas"></div>
+    </div>
+
+    <p id="message"></p>
+
+    <!-- Sons de acerto e erro -->
+    <audio id="correct-sound" src="acerto.mp3"></audio>
+    <audio id="wrong-sound" src="erro.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

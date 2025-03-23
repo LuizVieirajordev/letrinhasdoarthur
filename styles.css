@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.letter {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    cursor: grab;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.drop-areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.drop-zone {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.drop-zone img {
+    width: 80px;
+    max-width: 100%;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letters, .drop-areas {
+        max-width: 100%;
+    }
+
+    .letter {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .drop-zone {
+        width: 80px;
+        height: 80px;
+    }
+
+    .drop-zone img {
+        width: 60px;
+    }
+}
